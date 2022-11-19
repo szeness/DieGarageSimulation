@@ -1,15 +1,14 @@
 # DieGarageSimulation
 Objektorientierte Parkhaus Simulation mit GUI und automatisierten Parkvorgaengen sowie einstellbarem Aufkommen, Stosszeiten und fast forward Funktion . Autos können anhand einzigartiger Kennzeichen gefunden werden in variabler Anzahl von Parkhäusern.
 
-hi there, so well this is some cool playings with artificial simulation of random chances
-in core it shows usage of 2 dimensional arrays and the controled mass creation of objects  
+this is some cool playings with artificial simulation of random chances and the controled mass creation of objects
 
 so what actualy was in begining, it was an exercice given at a job application, where they wanted to have coded a algorythms for building a parking lot wich size 
 and floors should be left open, also cars and motorbikes should be registered unique by license plates.
 Methods were asked for look up vehicles momentary parking lots. also some like car gets parked and car leaves building.
 so no Gui has been asked or further more.  just a object orientated codes.
 
-so I added a Gui and I added the posibility to have multiple parking buildings, the option to set how many dummy buildings with same sizes should be opened.
+so I did that and added a Gui and I the posibility to have multiple parking buildings, the option to set how many dummy buildings with same sizes should be opened.
 also how many cars should be registered. 
 
 after u set those two options u can start an actual Simulation where the cars park in at random parking buildings and park out after a while. 
@@ -41,9 +40,9 @@ its possible that for example 10 000 open locks will stay wating for the sleep t
 
 but its all good meanwhile the solution is figured out as mentioned by my timer projects stable threads ai. 
 
-tho very interesting to learn and figure out how to best manage the threads in enormous high come ups. 
+tho very interesting how to best manage the threads in enormous high come ups. 
 
-would look forward to learn from expirienced developers about best handling of threads, in c++ preferly. 
+gonna learn more about it, tho I dont need it at my work now unfortunatly.
 
 
 
