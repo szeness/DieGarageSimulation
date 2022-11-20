@@ -3,8 +3,7 @@ Objektorientierte Parkhaus Simulation mit GUI und automatisierten Parkvorgaengen
 
 ![image](https://user-images.githubusercontent.com/105649203/202902918-95aaee0c-5624-4104-b2d8-635b37e411d8.png)
 
-
-![image](https://user-images.githubusercontent.com/105649203/202902873-5df4a0fd-86a6-4de0-9ce2-948efda32ba9.png)
+![image](https://user-images.githubusercontent.com/105649203/202902993-8869a8a0-e1d9-473a-b47d-ffbcb1a4e005.png)
 
 
 
