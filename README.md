@@ -1,6 +1,9 @@
 # DieGarageSimulation
 Objektorientierte Parkhaus Simulation mit GUI und automatisierten Parkvorgaengen sowie einstellbarem Aufkommen, Stosszeiten und fast forward Funktion . Autos können anhand einzigartiger Kennzeichen gefunden werden in variabler Anzahl von Parkhäusern.
 
+![image](https://user-images.githubusercontent.com/105649203/202902918-95aaee0c-5624-4104-b2d8-635b37e411d8.png)
+
+
 ![image](https://user-images.githubusercontent.com/105649203/202902873-5df4a0fd-86a6-4de0-9ce2-948efda32ba9.png)
 
 
