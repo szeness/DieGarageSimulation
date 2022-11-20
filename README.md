@@ -45,7 +45,7 @@ but its all good meanwhile the solution is figured out as mentioned by my timer 
 
 tho very interesting how to best manage the threads in enormous high come ups. 
 
-gonna learn more about it, tho I dont need it at my work now unfortunatly.
+gonna learn more about it, tho I dont need it at my job now unfortunatly.
 
 
 
