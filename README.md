@@ -14,7 +14,7 @@ and floors should be left open, also cars and motorbikes should be registered un
 Methods were asked for look up vehicles momentary parking lots. also some like car gets parked and car leaves building.
 so no Gui has been asked or further more.  just a object orientated codes.
 
-so I did that and added a Gui and I the posibility to have multiple parking buildings, the option to set how many dummy buildings with same sizes should be opened.
+so I did that and added a Gui and the posibility to have multiple parking buildings, the option to set how many dummy buildings with same sizes should be opened.
 also how many cars should be registered. 
 
 after u set those two options u can start an actual Simulation where the cars park in at random parking buildings and park out after a while. 
