@@ -14,35 +14,32 @@ and floors should be left open, also cars and motorbikes should be registered un
 Methods were asked for look up vehicles momentary parking lots. also some like car gets parked and car leaves building.
 so no Gui has been asked or further more.  just a object orientated codes.
 
-so I did that and added a Gui and the posibility to have multiple parking buildings, the option to set how many dummy buildings with same sizes should be opened.
-also how many cars should be registered. 
+so I did that and added a Gui and the posibility to have multiple parking buildings, the option to set how many dummy buildings with same sizes should be opened 
+and also how many cars should be registered. 
 
 after u set those two options u can start an actual Simulation where the cars park in at random parking buildings and park out after a while. 
-where and when to park and leave is based on an ai i made where the chances that something happens is relativ and dynamic and random. 
+where and when to park and leave is based on an ai i made where the chances that something happens is relativ and dynamic random. ^^ 
 
 so if u press play cars will park in and out and u can see it on the screens where and wich car. also u can switch between the buildings and see for each of them 
 the usage in % and the numbers of free lots. 
 
 because I wanted simulate a long durration where actualy can conclusions be drawn and a kinda realistic expirience of how things can happen rl. 
 
-therefore i added a Timewarp function so the random times for the decicions of the car drivers is shortened.
-also to see the rush hours and events happening the chances of when a driver needs a parking lot can be swaped.
+therefore i added a Timewarp function so the random times for the decisions of the car drivers is shortened.
+also to see the rush hours and events happening the chances of when a driver needs a parking lot can be changed.
 
 also its a little stats texts in the upper corner with the number of cars and the number of all parking lots. 
 
-aswell a button with for swap between background pictures. 
+aswell a button for swap between background pictures. 
 
-so we can let it run on fast mode and look how its going in rl almost. 
+so we can let it run on fast mode and look how its going in. 
 
 the next step in this project would be to add locations where ppl want to go to, and set locations for the garages, so the ai gets more intelligent by leting them use preferly the nearest garage. 
 I already have some in mind, tho it maybe gets to far, but was a fun project with nice steps towards ai and random decisions packed with Thread usage. 
-here the threads not acting perfect yet, for example if u stop the simulation, the remaining cars wich waiting for a decision to leave will stay runing for that random time period so some seconds up to minutes they kinda stay in the thinking cue. I have a solution for it, it will be that the random time when ppl decide to leave 
-will be checked in some millisec delays, aswell as the time they leave is a random time wich then gonna be checked by ai when the time has come, so if u press the 
+here the threads not acting perfect yet, for example if u stop the simulation, the remaining cars wich waiting for a decision to leave will stay runing for that random time period so some seconds up to minutes they kinda stay in the thinking cue and park out then. tho its still working just some cars will leave after stop is pressed. I have a solution for it, it will be that the random time when ppl decide to leave will be checked in some millisec delays, aswell as the time they leave is a random time wich then gonna be checked by ai when the time has come, so if u press the 
 stop button it will stop all the threads imidiatly right. kinda like I did in the Timer app. 
 
-u can now add so many parking buildings and cars as ur cpu able to manage with the "bad" threads solution what just mentioned :)
-
-its possible that for example 10 000 open locks will stay wating for the sleep to end. :))
+u can now add so many garages and cars as ur cpu able to manage with the "bad" threads solution what just mentioned :)
 
 but its all good meanwhile the solution is figured out as mentioned by my timer projects stable threads ai. 
 
