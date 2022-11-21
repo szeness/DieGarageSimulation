@@ -26,7 +26,7 @@ the usage in % and the numbers of free lots.
 because I wanted simulate a long durration where actualy can conclusions be drawn and a kinda realistic expirience of how things can happen rl. 
 
 therefore i added a Timewarp function so the random times for the decisions of the car drivers is shortened.
-also to see the rush hours and events happening the chances of when a driver needs a parking lot can be changed.
+also to see the rush hours and events happening the chances of when a driver needs a parking lot can be changed from regular to rush hour.
 
 also its a little stats texts in the upper corner with the number of cars and the number of all parking lots. 
 
