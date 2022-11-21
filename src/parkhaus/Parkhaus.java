@@ -144,8 +144,8 @@ public class Parkhaus {
 
                 f.parkTimeGetStart(duratSec);
 
-            } else {
-                System.out.println("\n" + f + " ist geparkt");
+
+
             }
         }
     }
@@ -157,14 +157,14 @@ public class Parkhaus {
         LOOP1:
         for (int i = 0; i < this.parkhaus.length; i++) {
             for (int j = 0; j < this.parkhaus[i].length; j++) {
-
+                Gui.textAreaZeitReal.setVisible(false);
                 if (this.parkhaus[i][j] == f) {
 
                     this.parkhaus[i][j] = null;
 
                     Gui.textAreaZeitReal.setText("\n" +
                             "       "+f.kennzeichen + "  * leaving *   P" + j + " E" + i);
-                    Gui.textAreaZeitReal.setVisible(false);
+
                     Gui.textAreaZeitReal.setVisible(true);
                     Gui.textPaneStats.append("\n<-    "+this+" * leaving *" +
                             "  "+f.kennzeichen + "           P" + j + " E" + i+"        ");

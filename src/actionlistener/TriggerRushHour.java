@@ -18,10 +18,10 @@ public class TriggerRushHour extends Gui implements ActionListener {
                 public void run() {
 
                     if(!click){
-                        Simulator.chance = 5000;
+                        Simulator.chance = 10;
                         Gui.rushHourBtn.setText("Regular");
                     }else{
-                        Simulator.chance = 90000;
+                        Simulator.chance = 200000;
                         Gui.rushHourBtn.setText("Rush Hour");
                     }
                     click=!click;

@@ -13,8 +13,6 @@ public class TimeWarp extends Gui implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
 
-
-
         if(!Politesse.timeACtual) {
             Politesse.timeACtual = true;
 

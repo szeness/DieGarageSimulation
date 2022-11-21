@@ -30,6 +30,7 @@ public class Main {
         ci.setDaemon(true);
         ci.start();
 
+
         new Simulator().setDaemon(true);
         new Simulator().start();
         new Politesse().setDaemon(true);

@@ -11,7 +11,7 @@ import static parkhaus.Parkhaus.parkhausListe;
 public class Simulator extends Thread{
 
     public int xi;
-    public static int chance = 120000;
+    public static int chance = 90000;
     public static int duratSec;
 
 
@@ -25,19 +25,17 @@ public class Simulator extends Thread{
 
     public void run() throws IllegalArgumentException {
 
-
         while (!Politesse.runzz) {
             if (chanceHumanNeedsAParking(chance)) {
                 try {
-                    sleep(50);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
+
+
                 if (!Politesse.timeACtual) {
                     duratSec = new Random().nextInt(10, 60);
+                    sleep(100);
                 } else {
-                    duratSec = new Random().nextInt(3, 18);
-
+                    duratSec = new Random().nextInt(2, 15);
+                    sleep(20);
                 }
                 int r = new Random().nextInt(0, Fahrzeug.kfz.size());
                 int rP = new Random().nextInt(0, parkhausListe.size());
@@ -47,19 +45,9 @@ public class Simulator extends Thread{
 
                 parkhausListe.get(Gui.indexParkhaus).getStatsParkhausTextArea();
 
-                parkhausListe.get(Gui.indexParkhaus).getStatsParkhausTextArea();
-
-             //   new StatsTextArea().run();
-
-            }else{
-
-                xi++;
-                if(xi == 195){
-                    System.out.println("-");
-                    xi=0;
-                }else
-                    System.out.print("-");
-
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
 
             }
         }

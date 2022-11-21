@@ -1,6 +1,8 @@
 package fahrzeuge;
 
 import gui.Gui;
+import threads.Politesse;
+import threads.Simulator;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -42,7 +44,7 @@ abstract public class Fahrzeug {
         LocalDateTime date = LocalDateTime.now();
         int startS = date.toLocalTime().toSecondOfDay();
         this.secToStay = startS + dur;
-        System.out.println(this.toString() +   this.secToStay);
+        System.out.println("its " + Politesse.rlTimecheck() + " " +this.toString() +   " will stay until "+ this.secToStay);
 
         return  this.secToStay;
     }
