@@ -2,7 +2,7 @@ package actionlistener;
 
 import gui.Gui;
 import main.Main;
-import threads.AusparkSimulator;
+import threads.Politesse;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -27,7 +27,7 @@ public class StartSimulation extends Gui implements ActionListener {
                     Gui.phAnzahlFeld.setVisible(false);
 
 
-                    AusparkSimulator.timeFast = false;
+                    Politesse.runzz = false;
 
                     Main.registriereKfz(Integer.parseInt(autosAnzahlField.getText()));
 
@@ -44,7 +44,7 @@ public class StartSimulation extends Gui implements ActionListener {
                     Gui.phAnzahlLabel.setVisible(true);
                     Gui.phAnzahlFeld.setVisible(true);
 
-                    AusparkSimulator.timeFast = true;
+                    Politesse.runzz = true;
                     Gui.startButton.setText("start");
 
                 }

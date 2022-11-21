@@ -2,14 +2,18 @@ package fahrzeuge;
 
 import gui.Gui;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Objects;
 
 abstract public class Fahrzeug {
 
+
+
     public String fahrZeugTyp;
     public String kennzeichen;
     public boolean geparkt;
+    public int parkZeit;
 
     public static ArrayList<String> fahrzeugRegister = new ArrayList<>();
     public static ArrayList<Fahrzeug> kfz = new ArrayList<>();
@@ -22,9 +26,25 @@ abstract public class Fahrzeug {
     }
 
 
+
     public Fahrzeug(){
 
 
+    }
+    public static int stat;
+    public static int counterSecs;
+    public static int seczZeit;
+    public int secToStay;
+
+
+    public int parkTimeGetStart(int dur) {
+
+        LocalDateTime date = LocalDateTime.now();
+        int startS = date.toLocalTime().toSecondOfDay();
+        this.secToStay = startS + dur;
+        System.out.println(this.toString() +   this.secToStay);
+
+        return  this.secToStay;
     }
 
 

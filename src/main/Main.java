@@ -1,12 +1,11 @@
 package main;
 
-import actionlistener.StartSimulation;
 import fahrzeuge.Fahrzeug;
-import threads.AusparkSimulator;
 import threads.CarIn;
 import gui.Gui;
 import parkhaus.Parkhaus;
-import threads.EinparkSimulator;
+import threads.Politesse;
+import threads.Simulator;
 
 import java.util.Arrays;
 
@@ -31,14 +30,12 @@ public class Main {
         ci.setDaemon(true);
         ci.start();
 
-        for (Parkhaus p: parkhausListe) {
+        new Simulator().setDaemon(true);
+        new Simulator().start();
+        new Politesse().setDaemon(true);
+        new Politesse().start();
 
-            new EinparkSimulator(p).setDaemon(true);
-            new EinparkSimulator(p).start();
-            new AusparkSimulator(p).setDaemon(true);
-            new AusparkSimulator(p).start();
 
-        }
     }
 
     public static void dummyParkhausEroeffnung(int stück) {

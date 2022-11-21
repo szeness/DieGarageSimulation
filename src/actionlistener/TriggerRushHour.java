@@ -1,7 +1,7 @@
 package actionlistener;
 
 import gui.Gui;
-import threads.EinparkSimulator;
+import threads.Simulator;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,20 +18,15 @@ public class TriggerRushHour extends Gui implements ActionListener {
                 public void run() {
 
                     if(!click){
-                        EinparkSimulator.chance = 2;
+                        Simulator.chance = 5000;
                         Gui.rushHourBtn.setText("Regular");
                     }else{
-                        EinparkSimulator.chance = 600;
+                        Simulator.chance = 90000;
                         Gui.rushHourBtn.setText("Rush Hour");
                     }
                     click=!click;
-
-
                 }
             };
             r.run();
-
-
-
     }
 }

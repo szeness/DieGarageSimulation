@@ -1,30 +1,58 @@
 package threads;
 
 import fahrzeuge.Fahrzeug;
-import gui.Gui;
 import parkhaus.Parkhaus;
 
-import java.util.Random;
+import java.time.LocalDateTime;
 
 import static parkhaus.Parkhaus.parkhausListe;
-import static threads.EinparkSimulator.chance;
-import static threads.EinparkSimulator.chanceHumanNeedsAParking;
 
-public class AusparkSimulator extends Thread {
+public class Politesse extends Thread {
 
 
-    public static boolean timeFast;
+    public static boolean runzz;
     public static boolean timeACtual;
 
-     Parkhaus phSimulation;
+    public static int rlTimecheck() {
 
-    public AusparkSimulator(Parkhaus p) {
+        LocalDateTime date = LocalDateTime.now();
+        int nowSec = date.toLocalTime().toSecondOfDay();
+
+        return nowSec;
+    }
+
+    public void run() {
+
+        while (!runzz) { try {
+
+            for (int i = 0; i < Fahrzeug.kfz.size(); i++) {
+
+                if (Fahrzeug.kfz.get(i).secToStay <= rlTimecheck())
+                {
+                    for (Parkhaus p: parkhausListe) {
+                        p.entferneFahrzeug(Fahrzeug.kfz.get(i));
+                    }
+
+                }
+            }
+
+            sleep(1);
+
+            new StatsTextArea().run();
+            } catch (InterruptedException e) {throw new RuntimeException(e);}
+
+
+        }
+
+
+
+
+    /*public Politesse(Parkhaus p) {
 
         this.phSimulation = p;
 
     }
 
-    public void run() {
 
         int xi = 0;
 
@@ -91,10 +119,8 @@ public class AusparkSimulator extends Thread {
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
+*/
 
-
-            }
-        }
     }
 }
 

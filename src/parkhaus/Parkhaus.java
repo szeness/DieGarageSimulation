@@ -5,6 +5,8 @@ import gui.Gui;
 import java.util.ArrayList;
 import java.util.Objects;
 
+import static threads.Simulator.duratSec;
+
 public class Parkhaus {
 
 
@@ -112,6 +114,7 @@ public class Parkhaus {
     }
 
 
+
     public void parkeFahrzeug(Fahrzeug f) {
 
         if(this.belegteParkplaetze < this.parkplatzZaehlung) {
@@ -138,6 +141,8 @@ public class Parkhaus {
                             }
                         }
                     }
+
+                f.parkTimeGetStart(duratSec);
 
             } else {
                 System.out.println("\n" + f + " ist geparkt");
