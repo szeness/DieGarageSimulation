@@ -32,7 +32,7 @@ also its a little stats texts in the upper corner with the number of cars and th
 
 aswell a button for swap between background pictures. 
 
-so we can let it run on fast mode and look how its going in. 
+so we can let it run on fast mode and look how its going. 
 
 the next step in this project would be to add locations where ppl want to go to, and set locations for the garages, so the ai gets more intelligent by leting them use preferly the nearest garage. 
 I already have some in mind, tho it maybe gets to far, but was a fun project with nice steps towards ai and random decisions packed with Thread usage. 
