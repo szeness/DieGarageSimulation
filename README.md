@@ -18,7 +18,7 @@ so I did that and added a Gui and the posibility to have multiple parking buildi
 and also how many cars should be registered. 
 
 after u set those two options u can start an actual Simulation where the cars park in at random parking buildings and park out after a while. 
-where and when to park and leave is based on an ai i made where the chances that something happens is relativ and dynamic random. ^^ 
+where and when to park and leave is based on an ai i made where the chances that something happens is dynamic and with chances from to to explain . 
 
 so if u press play cars will park in and out and u can see it on the screens where and wich car. also u can switch between the buildings and see for each of them 
 the usage in % and the numbers of free lots. 
