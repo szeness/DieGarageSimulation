@@ -39,7 +39,7 @@ I already have some in mind, tho it maybe gets to far, but was a fun project wit
 here the threads not acting perfect yet, for example if u stop the simulation, the remaining cars wich waiting for a decision to leave will stay runing for that random time period so some seconds up to minutes they kinda stay in the thinking cue and park out then. tho its still working just some cars will leave after stop has been pressed. I have a solution for it, it will be that the random time when ppl decide to leave will be checked in some millisec delays, aswell as the time they leave is a random time wich then gonna be checked by ai when the time has come, so if u press the 
 stop button it will stop all the threads imidiatly right. kinda like I did in the Timer app. 
 
-u can now add so many garages and cars as ur cpu able to manage with the "bad" threads solution what just mentioned :)
+u can now add so many garages and cars as ur cpu able to manage with the mentioned threads solution :)
 
 but its all good meanwhile the solution is figured out as mentioned by my timer projects stable threads ai. 
 
