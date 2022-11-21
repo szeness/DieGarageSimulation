@@ -105,7 +105,7 @@ public class Gui extends JFrame {
         framzz.add(textAreaZeit);
 
         textAreaZeit1 = new JTextArea();
-        textAreaZeit1.setSize(100, 50);
+        textAreaZeit1.setSize(100, 66);
         textAreaZeit1.setBackground(new Color(21, 71, 145, 0));
         textAreaZeit1.setLocation(5, 5);
         textAreaZeit1.setForeground(new Color(18, 252, 65));

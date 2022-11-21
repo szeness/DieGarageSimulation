@@ -11,13 +11,13 @@ import static parkhaus.Parkhaus.parkhausListe;
 public class Simulator extends Thread{
 
     public int xi;
-    public static int chance = 90000;
+    public static int chance = 20;
     public static int duratSec;
 
 
     public static boolean chanceHumanNeedsAParking(int c){
 
-        if(new Random().nextInt(1,c) == 1)
+        if(new Random().nextInt(1,c) == 2)
             return true;
 
      return false;
@@ -34,7 +34,7 @@ public class Simulator extends Thread{
                     duratSec = new Random().nextInt(10, 60);
                     sleep(100);
                 } else {
-                    duratSec = new Random().nextInt(2, 15);
+                    duratSec = new Random().nextInt(5, 30);
                     sleep(20);
                 }
                 int r = new Random().nextInt(0, Fahrzeug.kfz.size());

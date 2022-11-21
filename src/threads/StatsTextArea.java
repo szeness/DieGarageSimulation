@@ -18,6 +18,7 @@ public class StatsTextArea extends Thread {
         allSlots = 0;
         usedSlots = 0;
 
+
         for (Parkhaus p : parkhausListe) {
 
             allSlots += p.parkplatzZaehlung;
@@ -25,7 +26,10 @@ public class StatsTextArea extends Thread {
         }
         freeSlots = allSlots-usedSlots;
 
-        Gui.textAreaZeit1.setText("Slots: "+allSlots+"\nCars("+Fahrzeug.kfz.size()+")\nparking: "+usedSlots+"\n");
+        int percentage =  ((usedSlots * 100) / allSlots);
+
+        Gui.textAreaZeit1.setText("Slots: "+allSlots+"\nCars("+Fahrzeug.kfz.size()+")\nparking: "+usedSlots+"\n" +
+                percentage + "%" );
         Gui.textAreaZeit1.setVisible(false);
         Gui.textAreaZeit1.setVisible(true);
 
