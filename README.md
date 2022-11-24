@@ -16,8 +16,8 @@ this is some cool playings with artificial simulation of random chances and the 
 
 so what it was actualy in begining, it was an exercice given at a job application, where they wanted to have coded a algorythms for building a parking lot wich size 
 and floors should be left open, also cars and motorbikes should be registered unique by license plates.
-Methods were asked for look up vehicles momentary parking lots. also some like car gets parked and car leaves building.
-so no Gui has been asked or further more.  just a object orientated codes.
+Methods were asked for look up vehicles momentary parking slots. also some like car gets parked and car leaves building.
+so no Gui has been asked or further more.  just a object orientated code.
 
 so I did that and added a Gui and the posibility to have multiple parking buildings, the option to set how many dummy buildings with same sizes should be opened 
 and also how many cars should be registered. 
