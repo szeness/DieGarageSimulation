@@ -27,7 +27,7 @@ after u set those two options u can start an actual Simulation where the cars pa
 so if u press play cars will park in and out and u can see it on the screens where and wich car. also u can switch between the buildings and see for each of them 
 the usage in % and the numbers of free lots. 
 
-because I wanted simulate a long durration and a kinda realistic expirience of how things can happen rl. 
+because I wanted simulate a long durration and a kinda realistic expirience of how things can happen rl,
 
 therefore i added a Timewarp function so the random times for the decisions of the car drivers is shortened.
 also to see the rush hours and events happening the chances of when a driver needs a parking lot can be changed from regular to rush hour.
